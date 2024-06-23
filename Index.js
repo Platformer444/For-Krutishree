@@ -75,6 +75,10 @@ function SetTime() {
     TimeSpans[4].textContent = String(TimeDifference.Minute < 0 ? 60 + TimeDifference.Minute : TimeDifference.Minute);
     TimeSpans[5].textContent = String(CurrentDate.getSeconds());
 
+    TimeSpans.forEach((TimeSpan) => {
+        if (TimeSpan.textContent.length === 1) TimeSpan.textContent = "0" + TimeSpan.textContent;
+    });
+
     Days.forEach((Day) => {
         if (Day.Date.Day === CurrentDate.getDate()) {
             if (Day.Date.Month) {
