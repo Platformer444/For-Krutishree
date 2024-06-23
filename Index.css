@@ -1,0 +1,69 @@
+* {
+    text-align: center;
+    user-select: none;
+    font-family: "Playwrite ES", cursive;
+    font-optical-sizing: auto;
+}
+
+div.Container {
+    position: absolute;
+    z-index: -1;
+    height: 99%;
+    width: 99%;
+    margin: 0px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+
+div.RelationshipTime {
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    display: inline-block;
+
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+div.Time {
+    display: block;
+    margin: 2px;
+    padding: 10px;
+
+    font-size: 2em;
+}
+
+span.DayText {
+    margin: 10px;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+img.RelationshipImage {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+div.ImageChangeButton {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+
+    font-size: 1.5em;
+    font-weight: 900;
+
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
