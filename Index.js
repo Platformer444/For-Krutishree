@@ -75,7 +75,7 @@ function SetTime() {
     TimeSpans[4].textContent = String(TimeDifference.Minute < 0 ? 60 + TimeDifference.Minute : TimeDifference.Minute);
     TimeSpans[5].textContent = String(CurrentDate.getSeconds());
 
-    TimeSpans.forEach((TimeSpan) => {
+    (document.querySelectorAll('div.Time')[0]).children.forEach((TimeSpan) => {
         if (TimeSpan.textContent.length === 1) TimeSpan.textContent = "0" + TimeSpan.textContent;
     });
 
