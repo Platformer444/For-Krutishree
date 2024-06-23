@@ -3,6 +3,7 @@
     user-select: none;
     font-family: "Playwrite ES", cursive;
     font-optical-sizing: auto;
+    transition: 400ms all ease;
 }
 
 div.Container {
