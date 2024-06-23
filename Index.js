@@ -73,6 +73,7 @@ function SetTime() {
     TimeSpans[2].textContent = String(TimeDifference.Day < 0 ? ((CurrentDate.getFullYear() % 4) === 0 ? MonthengthsLeap : MonthLenghtsNormal)[CurrentDate.getMonth()] + TimeDifference.Day : TimeDifference.Day);
     TimeSpans[3].textContent = String(TimeDifference.Hour < 0 ? 24 + TimeDifference.Hour  : TimeDifference.Hour);
     TimeSpans[4].textContent = String(TimeDifference.Minute < 0 ? 60 + TimeDifference.Minute : TimeDifference.Minute);
+    TimeSpans[5].textContent = String(CurrentDate.getSeconds());
 
     Days.forEach((Day) => {
         if (Day.Date.Day === CurrentDate.getDate()) {
@@ -108,5 +109,5 @@ document.querySelectorAll('div.ImageChangeButton').forEach((Button) => {
     });
 })
 
-SetTime();
+window.setInterval(SetTime, 1000);
 SetImage(1);
