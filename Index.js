@@ -39,6 +39,18 @@ const Days = [
     {
         Day: 'Wife Day',
         Date: { Day: 23, Month: 6 }
+    },
+    {
+        Day: 'Huggy Day',
+        Date: { Day : 18 }
+    },
+    {
+        Day: 'Kissy Day',
+        Date: { Day : 19 }
+    },
+    {
+        Day: 'Friendship and Confession Day',
+        Date: { Day : 16 }
     }
 ];
 
