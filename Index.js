@@ -106,8 +106,8 @@ document.querySelectorAll('div.ImageChangeButton').forEach((Button) => {
         const Change = Number(Event.target.getAttribute('data-change'));
 
         let NewImage = CurrentImage + Change;
-        if (NewImage < 1) NewImage = 5;
-        else if (NewImage > 5) NewImage = 1;
+        if (NewImage < 1) NewImage = 6;
+        else if (NewImage > 6) NewImage = 1;
 
         SetImage(NewImage);
     });
