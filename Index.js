@@ -91,7 +91,7 @@ function SetTime() {
 
 function SetImage(ImageNum) {
     const Body = document.querySelectorAll('div.Container')[0];
-    Body.style.backgroundImage = `url(./Images/${ImageNum === 1 ? 5 : ImageNum - 1}.jpg)`;
+    Body.style.backgroundImage = `url(./Images/${ImageNum === 1 ? 6 : ImageNum - 1}.jpg)`;
 
     const Image = document.querySelectorAll('img.RelationshipImage')[0];
     Image.setAttribute('src', `./Images/${ImageNum}.jpg`);
