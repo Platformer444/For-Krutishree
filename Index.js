@@ -75,10 +75,6 @@ function SetTime() {
     TimeSpans[4].textContent = String(TimeDifference.Minute < 0 ? 60 + TimeDifference.Minute : TimeDifference.Minute);
     TimeSpans[5].textContent = String(CurrentDate.getSeconds());
 
-    (document.querySelectorAll('div.Time')[0]).children.forEach((TimeSpan) => {
-        if (TimeSpan.textContent.length === 1) TimeSpan.textContent = "0" + TimeSpan.textContent;
-    });
-
     Days.forEach((Day) => {
         if (Day.Date.Day === CurrentDate.getDate()) {
             if (Day.Date.Month) {
@@ -91,7 +87,7 @@ function SetTime() {
 
 function SetImage(ImageNum) {
     const Body = document.querySelectorAll('div.Container')[0];
-    Body.style.backgroundImage = `url(./Images/${ImageNum === 1 ? 7 : ImageNum - 1}.jpg)`;
+    Body.style.backgroundImage = `url(./Images/${ImageNum === 1 ? 8 : ImageNum - 1}.jpg)`;
 
     const Image = document.querySelectorAll('img.RelationshipImage')[0];
     Image.setAttribute('src', `./Images/${ImageNum}.jpg`);
@@ -106,8 +102,8 @@ document.querySelectorAll('div.ImageChangeButton').forEach((Button) => {
         const Change = Number(Event.target.getAttribute('data-change'));
 
         let NewImage = CurrentImage + Change;
-        if (NewImage < 1) NewImage = 7;
-        else if (NewImage > 7) NewImage = 1;
+        if (NewImage < 1) NewImage = 8;
+        else if (NewImage > 8) NewImage = 1;
 
         SetImage(NewImage);
     });
