@@ -87,7 +87,7 @@ function SetTime() {
 
 function SetImage(ImageNum) {
     const Body = document.querySelectorAll('div.Container')[0];
-    Body.style.backgroundImage = `url(./Images/${ImageNum === 1 ? 14 : ImageNum - 1}.jpg)`;
+    Body.style.backgroundImage = `url(./Images/${ImageNum === 1 ? 18 : ImageNum - 1}.jpg)`;
 
     const Image = document.querySelectorAll('img.RelationshipImage')[0];
     Image.setAttribute('src', `./Images/${ImageNum}.jpg`);
@@ -102,8 +102,8 @@ document.querySelectorAll('div.ImageChangeButton').forEach((Button) => {
         const Change = Number(Event.target.getAttribute('data-change'));
 
         let NewImage = CurrentImage + Change;
-        if (NewImage < 1) NewImage = 14;
-        else if (NewImage > 14) NewImage = 1;
+        if (NewImage < 1) NewImage = 18;
+        else if (NewImage > 18) NewImage = 1;
 
         SetImage(NewImage);
     });
