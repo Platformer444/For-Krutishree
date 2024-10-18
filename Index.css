@@ -3,7 +3,11 @@
     user-select: none;
     font-family: "Playwrite ES", cursive;
     font-optical-sizing: auto;
-    transition: 400ms all ease;
+    transition: 200ms all ease;
+}
+
+*:active {
+    outline: none;
 }
 
 div.Container {
@@ -33,31 +37,40 @@ div.RelationshipTime {
 
 div.Time {
     display: block;
-    margin: 2px;
+    margin: 5px;
     padding: 10px;
 
     font-size: 2em;
 }
 
 span.DayText {
-    margin: 10px;
+    margin: 5px;
     font-size: 2em;
     font-weight: 900;
 }
 
-img.RelationshipImage {
+div.Images, div.Texts, div.Checklist {
     margin: 10px;
     padding: 10px;
-    display: inline-block;
+    display: block;
+    position: relative;
 
-    height: 500px;
-    width: auto;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
 
-div.ImageChangeButton {
-    margin: 10px;
+img.RelationshipImage {
+    position: relative;
+    z-index: 3;
+
+    height: 450px;
+    width: auto;
+    border-radius: 10px;
+}
+
+div.ChangeButton {
+    margin: 5px;
     padding: 10px;
     display: inline-block;
 
@@ -67,4 +80,42 @@ div.ImageChangeButton {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+div.ChangeButton:active {
+    transform: translateY(-10px);
+}
+
+div.SelectionTab {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6); 
+}
+
+div.SelectionButton {
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+div.Active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+div.TextContainer {
+    height: 75%;
+    width: 100%;
+    overflow-y: scroll;
+
+    font-size: 20px;
+}
+
+div.Checklist {
+    font-size: 20px;
 }
