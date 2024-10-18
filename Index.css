@@ -109,7 +109,7 @@ div.Active {
 }
 
 div.TextContainer {
-    height: 75%;
+    height: 400px;
     width: 100%;
     overflow-y: scroll;
 
